@@ -60,7 +60,7 @@ namespace UserManager.Controllers
                 return BadRequest(result.Errors);
             }
 
-            Users.Add(user); // olusturulan user`i Users listesine ekle
+            Users.Add(user); 
 
             return Ok(user);
         }
@@ -84,8 +84,8 @@ namespace UserManager.Controllers
                 return NotFound(id);
             }
 
-            currentUser = user; // currentUser`i user olarak guncelleriz
-            currentUser.Id = id; //Id degerinin degismemesi icin
+            currentUser = user;
+            currentUser.Id = id; 
 
             return Ok(currentUser);
         }
